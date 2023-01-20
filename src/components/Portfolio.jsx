@@ -8,17 +8,21 @@ const Portfolio = () => {
     {
       id: 1,
       src: IronClip,
-      href: "https://goncaloarsenio.github.io/project_1_Game/",
+      demo: "https://goncaloarsenio.github.io/project_1_Game/",
+      code: "https://github.com/goncaloarsenio/project_1_Game",
     },
+
     {
       id: 2,
-      src: JobCoach,
-      href: "https://ironhack-project3-client.netlify.app/",
+      src: NbaPedia,
+      demo: "https://nbapedia.cyclic.app/",
+      code: "https://github.com/goncaloarsenio/project3-client",
     },
     {
       id: 3,
-      src: NbaPedia,
-      href: "https://nbapedia.cyclic.app/",
+      src: JobCoach,
+      demo: "https://ironhack-project3-client.netlify.app/",
+      code: "https://github.com/goncaloarsenio/project_2",
     },
   ];
 
@@ -37,7 +41,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, href }) => (
+          {portfolios.map(({ id, src, demo, code }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -45,14 +49,16 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <a href={href} target="_blank" rel="noreferrer">
+                <a href={demo} target="_blank" rel="noreferrer">
                   <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                     Demo
                   </button>
                 </a>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
-                </button>
+                <a href={code} target="_blank" rel="noreferrer">
+                  <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    Code
+                  </button>
+                </a>
               </div>
             </div>
           ))}
