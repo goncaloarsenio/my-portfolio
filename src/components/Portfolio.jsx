@@ -2,6 +2,7 @@ import React from "react";
 import IronClip from "../assets//portfolio/ironclip.jpg";
 import JobCoach from "../assets//portfolio/jobcoach.jpg";
 import NbaPedia from "../assets//portfolio/nbapedia.jpg";
+import UXUIWebsite from "../assets/portfolio/UXUIWebsite.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -23,6 +24,13 @@ const Portfolio = () => {
       src: JobCoach,
       demo: "https://ironhack-project3-client.netlify.app/",
       code: "https://github.com/goncaloarsenio/project_2",
+    },
+
+    {
+      id: 4,
+      src: UXUIWebsite,
+      demo: "https://uxuimodernwebsite.netlify.app/",
+      code: "https://github.com/goncaloarsenio/my-react-project-1",
     },
   ];
 
